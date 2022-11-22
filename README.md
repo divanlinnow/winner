@@ -1,10 +1,6 @@
 # winner
 Solution for Derivco technical assessment
 
-
-
-
-
 # Programming Task
 We've created a simple multiplayer card game called "Add 'Em Up" where 5 players are dealt 5 cards
 from a standard 52 card pack, and the winner is the one with the highest score. The score for each
@@ -16,10 +12,10 @@ diamonds = 2 and clubs = 1, and the player's score is the sum of the 5 values.
 
 You are required to write a production ready command line application using C#, Java or JavaScript
 (Node application) that needs to do the following:
-• Run on Windows.
-• Be invoked with the name of the input and output text files.
-• Read the data from the input file, find the winner(s) and write them to the output file.
-• Handle any problems with the input.
+- Run on Windows.
+- Be invoked with the name of the input and output text files.
+- Read the data from the input file, find the winner(s) and write them to the output file.
+- Handle any problems with the input.
 
 # Command Parameters
 The command parameters can be in any order and are relative to the current folder, or absolute.
@@ -32,25 +28,26 @@ characters, the face value followed by the suit (S = Spades, H = Hearts, D = Dia
 Clubs).
 e.g.
 
-Name1:AH,3C,8C,2S,JD
-Name2:KD,QH,10C,4C,AC
-Name3:6S,8D,3D,JH,2D
-Name4:5H,3S,KH,AS,9D
-Name5:JS,3H,2H,2C,4D
+Name1:AH,3C,8C,2S,JD<br />
+Name2:KD,QH,10C,4C,AC<br />
+Name3:6S,8D,3D,JH,2D<br />
+Name4:5H,3S,KH,AS,9D<br />
+Name5:JS,3H,2H,2C,4D<br />
 
 # Output File Structure
 The output file should contain a single line, with one of the following 3 possibilities:
 
-• The name of the winner and their score (colon separated).
-• A comma separated list of winners in the case of a tie and the score (colon separated).
-• "ERROR", if the input file had any issue.
+- The name of the winner and their score (colon separated).
+- A comma separated list of winners in the case of a tie and the score (colon separated).
+- "ERROR", if the input file had any issue.
 
-E.g.
-NameX:40
-// or
-NameX,NameY:35
-// or
-ERROR
+E.g.<br />
+NameX:40<br />
+// or<br />
+NameX,NameY:35<br />
+// or<br />
+ERROR<br />
+
 # Application Execution
 Your application will be tested using an automated test runner, so your application must run to
 completion without any user input.
@@ -61,4 +58,4 @@ follows (external assembly references aren't needed):
 csc winner.cs (produces winner.exe)
 It will be called as follows:
 winner.exe --in abc.txt --out xyz.txt
-Internal - Intellectual Property
+
